@@ -5,14 +5,27 @@
 
 operation = input(
     'What calculation would you like to do? (+, -, *, /) ')
-num1 = input('what would you like the first number to be?')
-num2 = input('what would you like the second number to be?')
+num1 = int(input('what would you like the first number to be?'))
+num2 = int(input('what would you like the second number to be?'))
 
-if (operation == '+'):
-    print(int(num1) + int(num2))
-elif (operation == '-'):
-    print(int(num1) - int(num2))
-elif (operation == '*'):
-    print(int(num1) * int(num2))
-else:
-    print(int(num1) / int(num2))
+# if operation == '+':
+#   print(int(num1) + int(num2))
+# elif operation == '-':
+#   print(int(num1) - int(num2))
+# elif operation == '*':
+#   print(int(num1) * int(num2))
+# elif operation == '/':
+#   print(num1 / num2)
+# else:
+#   print('please make a valid selection')
+
+# OR a dictionary
+
+
+math = {
+    '+': num1 + num2,
+    '-': num1 - num2,
+    '*': num1 * num2,
+    '/': num1 / num2
+}
+print(math[operation])

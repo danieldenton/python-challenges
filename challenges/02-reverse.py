@@ -7,10 +7,16 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
-txt = "this works"[::-1]
-print(txt)
+#txt = "this works"[::-1]
+# print(txt)
 
 # interate though the characters of a string.
 # slice the end off and push it too a new string.
-txt = reversed("this works")
-print(txt)
+#txt = reversed("this works")
+# print(txt)
+string = "this works"
+
+empty = ''
+for letter in string:
+    empty = letter + empty
+    print(empty)
